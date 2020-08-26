@@ -1,4 +1,6 @@
 steps:
+  - label: "<img class="emoji" title="pipeline" alt=":pipeline:" src="http://buildkiteassets.com/emojis/img-buildkite-64/pipeline.png" draggable="false" /> Pipeline upload"
+  - command: buildkite-agent pipeline upload
   - label: ":build: List files"
     command: "ls -la"
     agents:
@@ -10,7 +12,4 @@ steps:
     command: "mkdir pkg"
     agents:
     - "queue=aws"
-
-
-   
- 
+    
