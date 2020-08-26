@@ -1,0 +1,16 @@
+steps:
+  - label: ":build: List files"
+    command: "ls -la"
+    agents:
+    - "queue=aws"
+
+  - wait
+
+  - label: ":package: Package"
+    command: "mkdir pkg"
+    agents:
+    - "queue=aws"
+  - wait
+
+   
+ 
