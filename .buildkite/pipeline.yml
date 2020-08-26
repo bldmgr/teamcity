@@ -10,7 +10,7 @@ steps:
     command: "mkdir pkg"
     agents:
     - "queue=aws"
-  - wait
+
 
    
  
